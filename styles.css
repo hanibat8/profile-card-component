@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(16, 153, 172);
+    background-image:
+        url(/images/bg-pattern-top.svg),
+        url(/images/bg-pattern-bottom.svg) ;
+    background-position: bottom 30vh right 50vw ,top 40vh left 50vw ;
+    background-repeat: no-repeat;
+}
+
+.card {
+    max-width: 400px;
+    width: 80%;
+    height:40rem;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+    background-color: rgb(17, 169, 189);
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.card__head{
+    background-image:
+        url(/images/bg-pattern-card.svg);
+    height: 38%;
+    background-size: cover;
+    position: relative;
+}
+
+.card__head--pic{
+    position: absolute;
+    bottom:-50%;
+    left: 50%;
+    margin-left: -50px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: .5rem;
+}
+
+.card__body{
+    background-color: #fff;
+    height: 62%;;
+}
+
+.card__body-credentials{
+    text-align: center;
+    padding-top: 8rem;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 1rem;
+}
+
+.card__body-credentials--name{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.card__body-credentials--age{
+    font-size: 2.2rem;
+    color: rgb(173, 165, 165);
+    margin-left: .5rem;
+}
+
+.card__body-credentials--city{
+    color: rgb(173, 165, 165);
+    font-size: 1.8rem;
+}
+
+.card__body-statistics{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.card__body-statistic-heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card__body-statistic-data{
+    color: rgb(173, 165, 165);
+
+}
