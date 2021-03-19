@@ -39,7 +39,6 @@ body {
     border-radius: 10%;
     overflow: hidden;
 }
-
 .card__head{
     background-image:
         url(/images/bg-pattern-card.svg);
